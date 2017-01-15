@@ -15,7 +15,7 @@ import Rasa.Internal.Editor
 
 
 -- | A wrapper around event listeners so they can be stored in 'Hooks'.
-data Hook = forall a. Hook HookId a
+data Hook = forall a. Hook HookId (a -> Action ())
 data HookId =
   HookId Int TypeRep
 

@@ -126,16 +126,26 @@ module Rasa.Ext
   , Hook
   , HookId
   , dispatchEvent
-  , eventListener
+  , onEveryTrigger
+  , onEveryTrigger_
+  , onNextEvent
   , removeListener
   , eventProvider
 
   -- * Built-in Event Hooks
-  , beforeEvent
-  , beforeRender
-  , onRender
-  , afterRender
   , onInit
+  , beforeEveryEvent
+  , beforeEveryEvent_
+  , beforeNextEvent
+  , beforeEveryRender
+  , beforeEveryRender_
+  , beforeNextRender
+  , onEveryRender
+  , onEveryRender_
+  , onNextRender
+  , afterEveryRender
+  , afterEveryRender_
+  , afterNextRender
   , onExit
   , onBufAdded
 
